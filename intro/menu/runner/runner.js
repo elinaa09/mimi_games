@@ -187,7 +187,7 @@ function draw() {
     }
 }
  
-// main game loop
+
 function gameLoop() {
     update();
     draw();
