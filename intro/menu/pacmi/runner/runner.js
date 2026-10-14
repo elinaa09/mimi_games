@@ -19,7 +19,7 @@ let runImage = [run1, run2, run3];
 
 let groundY = 280;
 
-let playerX = 100;
+let playerX = 100;bbftj 
 let playerY = groundY;
 let playerWidth=60;
 let playerHeight=70;

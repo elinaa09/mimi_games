@@ -6,18 +6,14 @@ let score = 0;
 
 document.querySelector(".score").textContent = score;
 
+fetch("./data/cards.json")
+.then((res) => res.json())
+.then((data) => {
+  cards= [...data, ...data];
+  shuffleCards();
+  generateCards();
+});
 
-const cardData = [
-  { name: "sparkle", img: "sparkle.png" },
-  { name: "crying", img: "crying.png" },
-  { name: "dizzy", img: "dizzy.png" },
-  { name: "love", img: "love.png" },
-  { name: "sad", img: "sad.png" },
-  { name: "shocked", img: "shocked.png" },
-];
-
-
-cards = [...cardData, ...cardData];
 
 shuffleCards();
 generateCards();
@@ -27,7 +23,7 @@ function generateCards() {
     const cardElement = document.createElement("div");
     cardElement.classList.add("card");
     cardElement.setAttribute("data-name", card.name);
-    cardElement.innerHTML = `
+    cardElement.innerHTML = `           
       <div class="front">
         <img class="front-image" src="${card.img}" />
       </div>
@@ -39,7 +35,16 @@ function generateCards() {
 }
 
 function shuffleCards() {
-  cards.sort(() => Math.random() - 0.5);
+  let currentIndex = cards.length,
+    randomIndex,
+    temperoraryValue;
+  while (currentIndex !==0){
+    randomIndex = Math.floor(Math.random()* currentIndex)
+    currentIndex -=1;
+    temperoraryValue = cards[currentIndex];
+    cards[currentIndex] = cards[randomIndex];
+    cards[randomIndex] = temperoraryValue;
+  }
 }
 
 function flipCard() {
@@ -72,7 +77,8 @@ function disableCards() {
   secondCard.removeEventListener("click", flipCard);
 
   resetBoard();
-}
+}1000;
+
 
 function unflipCards() {
   setTimeout(() => {
@@ -90,7 +96,6 @@ function resetBoard() {
 
 function restart() {
   resetBoard();
-  cards = [...cardData, ...cardData]; 
   shuffleCards();                    
   score = 0;
   document.querySelector(".score").textContent = score;

@@ -49,7 +49,7 @@ let gameover = false;
 let crashX   = 0;
 let crashY   = 0;
  
-//HIGH SCORE
+
 let highScore = 0;
  
 const saved = localStorage.getItem("driveHighScore");
