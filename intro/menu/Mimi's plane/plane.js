@@ -6,13 +6,13 @@ let highScore = 0;
 const savedHigh = localStorage.getItem("planeHighScore");
 if (savedHigh) highScore = parseInt(savedHigh);
 
-//board
+
 let board;
 let boardWidth = window.innerWidth;
 let boardHeight = window.innerHeight;
 let context;
 
-//plane
+
 let planeWidth = 60;   
 let planeHeight = 40;  
 let planeX = boardWidth/8;

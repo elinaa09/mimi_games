@@ -167,7 +167,7 @@ function draw() {
     ctx.font = "14px Courier New";
     ctx.fillText("Speed: " + gameSpeed.toFixed(1), 16, 52);
 
-    // game over screen
+    
     if (gameOver) {
         ctx.fillStyle = "rgba(0, 0, 0, 0.5)";
         ctx.fillRect(0, 0, canvas.width, canvas.height);

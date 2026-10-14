@@ -215,7 +215,7 @@ function drawFire() {
  
 function update() {
  
-    // draw background
+    
     if (bgImage.complete) {
         ctx.drawImage(bgImage, 0, 0, canvas.width, canvas.height);
     } else {

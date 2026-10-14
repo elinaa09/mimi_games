@@ -27,7 +27,7 @@ One crash and it's game over
 One-button jump
 Obstacles keep coming
 Survive as long as you can
-inspohttps://www.youtube.com/watch?v=lB_J-VNMVpE&t=12s
+inspo https://www.youtube.com/watch?v=lB_J-VNMVpE&t=12s
 
 #game4: Snakey, eat all the apples.
 The blue box is the snake and the red box is the apple.
