@@ -1,19 +1,19 @@
  [
   { "name": "sparkle",
-   "image": "sparkle.png" },
+   "img": "sparkle.png" },
 
   { "name": "crying",
- "image": "crying.png" },
+ "img": "crying.png" },
 
   { "name": "dizzy",
    "image": "dizzy.png" },
 
   { "name": "love",
-   "image": "love.png" },
+   "img": "love.png" },
    
   { "name": "sad",
-   "image": "sad.png" },
+   "img": "sad.png" },
 
   { "name": "shocked",
-   "image": "shocked.png" }
+   "img": "shocked.png" }
 ]

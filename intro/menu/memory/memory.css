@@ -74,11 +74,11 @@ p {
 }
 
 .card .back {
-  background-image: url('memory/memory.jpg');
+  background-image: url('memory.jpg');
   background-position: center center;
   background-size: cover;
   backface-visibility: hidden;
-  height: 400px; 
+  height: 200px; 
   width: 100%;
 }
 

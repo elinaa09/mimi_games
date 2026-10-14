@@ -3,23 +3,54 @@ collection of beginner friendly mini games to help our character mimi play,
 
 #features
 quick introduction with mimi
-![alt text](image.png)
+  <img src="menu/image.png" width="500">
 
-game1: pacmi, dont let the snakes get Mimi!
-![alt text](menu/pacmipfp.png)
+#game1: pacmi
+Pac-Man, Mimi edition. Guide Mimi around the maze and eat everything in sight.
+  <img src="menu/pacmipfp.png" width="500">
+-Maze movement with arrow keys
+-Collect dots to rack up points
+-Dodge the ghosts, 
+dont let the snakes get Mimi!
 
-game2: Mimi Drive, drive with Mimi.
-![alt text](menu/drivepfp.png)
 
-game3: Mimi the Runner.
-![alt text](menu/runnerpfp.png)
+#game2: Mimi Drive, drive with Mimi.
+  <img src="menu/drivepfp.png" width="500">
+Steer left and right
+Avoid the other cars
+One crash and it's game over
 
-game4: Snakey, eat all the apples.
-![alt text](menu/snakepfp.png) 
 
-game5: Mimi's plane, dont get crashed!
-![alt text](menu/planepfp.png)
+#game3: Mimi the Runner.
+  <img src="menu/runnerpfp.png" width="500">
+  An endless runner. Keep running and jump over the obstacles.
 
-game6: memory card, check mimis memory.
-![alt text](menu/memorypfp.png)
+One-button jump
+Obstacles keep coming
+Survive as long as you can
+
+
+#game4: Snakey, eat all the apples.
+The blue box is the snake and the red box is the apple.
+<img src="menu/snakepfp.png" width="500">
+Steer with the arrow keys
+Eat apples to grow longer
+Don't hit the walls or yourself 
+
+
+#game5: Mimi's plane, dont get crashed!
+<img src="menu/planepfp.png" width="500">
+Tap or press a key to fly up
+Gravity pulls you down
+Squeeze through the gaps without crashing
+
+
+
+#game6: memory card, check mimis memory.
+Flip the cards and match the pairs from memory.
+<img src="menu/memorypfp.jpg" width="500">
+Cards are shuffled every round
+Flip two at a time to find a match
+Matched pairs stay revealed and add to your score
+Restart button to play again
 

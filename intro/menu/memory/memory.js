@@ -6,7 +6,7 @@ let score = 0;
 
 document.querySelector(".score").textContent = score;
 
-fetch("./data/cards.json")
+fetch("memory.json")
 .then((res) => res.json())
 .then((data) => {
   cards= [...data, ...data];
@@ -25,7 +25,7 @@ function generateCards() {
     cardElement.setAttribute("data-name", card.name);
     cardElement.innerHTML = `           
       <div class="front">
-        <img class="front-image" src="${card.img}" />
+        <img class="front-img" src="${card.img}" />
       </div>
       <div class="back"></div>
     `;
@@ -59,7 +59,6 @@ function flipCard() {
   }
 
   secondCard = this;
-  score++;
   document.querySelector(".score").textContent = score;
   lockBoard = true;
 
@@ -75,6 +74,8 @@ function checkForMatch() {
 function disableCards() {
   firstCard.removeEventListener("click", flipCard);
   secondCard.removeEventListener("click", flipCard);
+  score++
+  document.querySelector(".score").textContent = score;
 
   resetBoard();
 }1000;
