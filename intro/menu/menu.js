@@ -1,5 +1,5 @@
-const bgMusic = new Audio("../sounds/background.mp3");
-const clickSound = new Audio("../sounds/click.mp3");
+const bgMusic = new Audio("sounds/bg.mp3");
+const clickSound = new Audio("sounds/click.mp3");
 bgMusic.loop = true;
 
 const gameCards = document.querySelectorAll('.game-card');

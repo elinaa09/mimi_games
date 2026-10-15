@@ -1,4 +1,4 @@
-const bgMusic = new Audio("../sounds/background.mp3");
+const bgMusic = new Audio("../../../sounds/bg.mp3");
 bgMusic.loop = true;
 bgMusic.play().catch(() => {});
 

@@ -1,5 +1,5 @@
 
-const bgMusic = new Audio("../sounds/background.mp3");
+const bgMusic = new Audio("sounds/bg.mp3");
 bgMusic.loop = true;
 bgMusic.play().catch(() => {});
 
@@ -248,7 +248,7 @@ function move() {
     pacmi.x += pacmi.velocityX;
     pacmi.y += pacmi.velocityY;
 
-    //check bush collisions
+    //check  collisions
     for (let wall of walls.values()) {
         if (collision(pacmi, wall)) {
             pacmi.x -= pacmi.velocityX;
@@ -256,7 +256,7 @@ function move() {
             break;
         }
     }
-    //check snake collision
+    
     for (let snake of snakes.values()) {
         if (collision(pacmi, snake)) {    //always true
             lives -=1;
@@ -283,7 +283,7 @@ function move() {
             }
         }
 
-    //check food collision
+
     let eaten = null;
     for (let food of foods.values()) {
         if (collision(pacmi, food)){
@@ -311,7 +311,7 @@ function movePacmi(e) {
         update(); //restart game loop
         return;
     }
-    if      (e.code == "ArrowUp" || e.code == "KeyW") pacmi.updateDirection('W');
+    if  (e.code == "ArrowUp" || e.code == "KeyW") pacmi.updateDirection('W');
 
     else if (e.code == "ArrowDown" || e.code == "KeyS")  pacmi.updateDirection('S');
     

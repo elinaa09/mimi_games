@@ -19,12 +19,12 @@ let runImage = [run1, run2, run3];
 
 let groundY = 280;
 
-let playerX = 100;bbftj 
+let playerX = 100; 
 let playerY = groundY;
 let playerWidth=60;
 let playerHeight=70;
 let playerSpeedY=0;
-let isJumping= false;
+let isjumping= false;
 
 let obstacleList = [];
 let spawnTimer = 80;
